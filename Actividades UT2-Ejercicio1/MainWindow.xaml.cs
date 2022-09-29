@@ -20,13 +20,15 @@ namespace Actividades_UT2_Ejercicio1
     /// </summary>
     public partial class MainWindow : Window
     {
-        public int numeroSecreto = NumeroRandom();
+        public int numeroSecreto { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            numeroSecreto = NumeroRandom();
         }
         
-        static private int NumeroRandom()
+        private int NumeroRandom()
         {
             Random semilla = new Random();
             return semilla.Next(0, 101);
@@ -36,22 +38,25 @@ namespace Actividades_UT2_Ejercicio1
         {
             numeroSecreto = NumeroRandom();
             Resultado.Text = "";
-            NumeroUsuario.Text = "";
+            NumeroUsuarioTextBox.Text = "";
         }
 
         private void Button_Comprobar(object sender, RoutedEventArgs e)
         {
             if (int.Parse(NumeroUsu()) == numeroSecreto)
                 Resultado.Text = "Has acertado";
-            else if (int.Parse(NumeroUsuario.Text) > numeroSecreto)
+            else if (int.Parse(NumeroUsuarioTextBox.Text) > numeroSecreto)
                 Resultado.Text = "Te has pasado";
-            else if (int.Parse(NumeroUsuario.Text) < numeroSecreto)
+            else if (int.Parse(NumeroUsuarioTextBox.Text) < numeroSecreto)
                 Resultado.Text = "Te has quedado corto";
         }
         private string NumeroUsu()
         {
-            return NumeroUsuario.Text;
+            return NumeroUsuarioTextBox.Text;
         }
-        private void NumeroUsu(object sender, TextChangedEventArgs e) { }
+        private void NumeroUsu(object sender, TextChangedEventArgs e)
+        {
+            // Method intentionally left empty.
+        }
     }
 }

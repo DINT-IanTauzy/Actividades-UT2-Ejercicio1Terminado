@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividades_UT2_Ejercicio1"
         mc:Ignorable="d"
-        Title="Adivina el Numero" Height="324" Width="1015.739" Icon="question-purzen_Icon_with_question_mark_Vector_Clipart.png">
+        Title="Adivina el Numero" Height="324" Width="1015.739" Icon="sign-question-icon_34359.ico">
     <Grid Margin="0,4,2,1">
 
         <TextBlock HorizontalAlignment="Left" Margin="96,97,0,0" TextWrapping="Wrap" Text="¿Que numero has pensado?" VerticalAlignment="Top" Height="38" Width="312" FontSize="24" RenderTransformOrigin="0.353,1.316"/>
-        <TextBox x:Name="NumeroUsuario" Height="38" Margin="454,97,419,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="NumeroUsu" FontSize="24"/>
+        <TextBox x:Name="NumeroUsuarioTextBox" Height="38" Margin="454,97,419,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="NumeroUsu" FontSize="24"/>
         <Button x:Name="Comprobar" Content="Comprobar" HorizontalAlignment="Left" Margin="184,189,0,0" VerticalAlignment="Top" Width="224" Height="51" FontSize="24" Click="Button_Comprobar"/>
         <Button x:Name="Reiniciar" Content="Reiniciar" HorizontalAlignment="Left" Margin="633,189,0,0" VerticalAlignment="Top" Width="224" Height="50" FontSize="24" Click="Button_Reiniciar"/>
         <TextBlock HorizontalAlignment="Right" Margin="0,0,734,0" TextWrapping="Wrap" Text="Adivina el numero" VerticalAlignment="Top" Height="36" Width="212" FontSize="24"/>
         <TextBlock x:Name="Resultado" HorizontalAlignment="Left" Margin="633,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="301" FontSize="24"/>
-        <Image HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="26" Source="question-purzen_Icon_with_question_mark_Vector_Clipart.png" Margin="22,4,0,0" RenderTransformOrigin="0.56,-0.37"/>
+        <Image HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="26" Source="sign-question-icon_34359.ico" Margin="22,4,0,0" RenderTransformOrigin="0.56,-0.37"/>
     </Grid>
 </Window>

@@ -100,5 +100,8 @@
   <ItemGroup>
     <Folder Include="Recursos\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sign-question-icon_34359.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
